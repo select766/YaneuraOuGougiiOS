@@ -11,6 +11,9 @@
 		AAEE8CEC29001A420054DA5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8CEB29001A420054DA5E /* ContentView.swift */; };
 		AAEE8CEE29001A470054DA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8CED29001A470054DA5E /* Assets.xcassets */; };
 		AAEE8CF129001A470054DA5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8CF029001A470054DA5E /* Preview Assets.xcassets */; };
+		AAEE8CFD29001C570054DA5E /* DlShogiResnet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8CFC29001C570054DA5E /* DlShogiResnet.mlmodel */; };
+		AAEE8D0029001C860054DA5E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEE8CFF29001C860054DA5E /* libc++.tbd */; };
+		AAEE8D0329002B700054DA5E /* YaneuraOuiOSSPM in Frameworks */ = {isa = PBXBuildFile; productRef = AAEE8D0229002B700054DA5E /* YaneuraOuiOSSPM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		AAEE8CEB29001A420054DA5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAEE8CED29001A470054DA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAEE8CF029001A470054DA5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAEE8CFC29001C570054DA5E /* DlShogiResnet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DlShogiResnet.mlmodel; sourceTree = "<group>"; };
+		AAEE8CFF29001C860054DA5E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAEE8D0029001C860054DA5E /* libc++.tbd in Frameworks */,
+				AAEE8D0329002B700054DA5E /* YaneuraOuiOSSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +44,7 @@
 			children = (
 				AAEE8CE829001A420054DA5E /* FukauraOuiOS */,
 				AAEE8CE729001A420054DA5E /* Products */,
+				AAEE8CFE29001C850054DA5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +61,7 @@
 			children = (
 				AAEE8CE929001A420054DA5E /* FukauraOuiOSApp.swift */,
 				AAEE8CEB29001A420054DA5E /* ContentView.swift */,
+				AAEE8CFC29001C570054DA5E /* DlShogiResnet.mlmodel */,
 				AAEE8CED29001A470054DA5E /* Assets.xcassets */,
 				AAEE8CEF29001A470054DA5E /* Preview Content */,
 			);
@@ -65,6 +74,14 @@
 				AAEE8CF029001A470054DA5E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AAEE8CFE29001C850054DA5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAEE8CFF29001C860054DA5E /* libc++.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +100,9 @@
 			dependencies = (
 			);
 			name = FukauraOuiOS;
+			packageProductDependencies = (
+				AAEE8D0229002B700054DA5E /* YaneuraOuiOSSPM */,
+			);
 			productName = FukauraOuiOS;
 			productReference = AAEE8CE629001A420054DA5E /* FukauraOuiOS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = AAEE8CDD29001A410054DA5E;
+			packageReferences = (
+				AAEE8D0129002B700054DA5E /* XCRemoteSwiftPackageReference "FukauraOuiOSSPM" */,
+			);
 			productRefGroup = AAEE8CE729001A420054DA5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAEE8CEC29001A420054DA5E /* ContentView.swift in Sources */,
+				AAEE8CFD29001C570054DA5E /* DlShogiResnet.mlmodel in Sources */,
 				AAEE8CEA29001A420054DA5E /* FukauraOuiOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +299,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +329,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +365,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAEE8D0129002B700054DA5E /* XCRemoteSwiftPackageReference "FukauraOuiOSSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/select766/FukauraOuiOSSPM";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAEE8D0229002B700054DA5E /* YaneuraOuiOSSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAEE8D0129002B700054DA5E /* XCRemoteSwiftPackageReference "FukauraOuiOSSPM" */;
+			productName = YaneuraOuiOSSPM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAEE8CDE29001A410054DA5E /* Project object */;
 }
