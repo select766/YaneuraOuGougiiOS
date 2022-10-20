@@ -24,6 +24,7 @@
 		AAEE8CF029001A470054DA5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AAEE8CFC29001C570054DA5E /* DlShogiResnet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DlShogiResnet.mlmodel; sourceTree = "<group>"; };
 		AAEE8CFF29001C860054DA5E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		AAEE8D0C29014F410054DA5E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		AAEE8CDD29001A410054DA5E = {
 			isa = PBXGroup;
 			children = (
+				AAEE8D0C29014F410054DA5E /* README.md */,
 				AAEE8CE829001A420054DA5E /* FukauraOuiOS */,
 				AAEE8CE729001A420054DA5E /* Products */,
 				AAEE8CFE29001C850054DA5E /* Frameworks */,
