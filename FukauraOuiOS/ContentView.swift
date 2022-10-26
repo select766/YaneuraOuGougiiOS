@@ -41,7 +41,8 @@ struct ContentView: View {
                 let host_p = stringToUnsafeMutableBufferPointer(usiHost)
                 print(DlShogiResnet.urlOfModelInThisBundle.absoluteString)
                 let model_url_p = stringToUnsafeMutableBufferPointer(DlShogiResnet.urlOfModelInThisBundle.absoluteString)
-                let mainResult = YaneuraOuiOSSPM.yaneuraou_ios_main(host_p.baseAddress!, 8090, model_url_p.baseAddress!)
+                let compute_units: Int32 = 2 // 0:cpu, 1: cpuandgpu, 2: all (neural engine)
+                let mainResult = YaneuraOuiOSSPM.yaneuraou_ios_main(host_p.baseAddress!, 8090, model_url_p.baseAddress!, compute_units)
                 print("yaneuraou_ios_main", mainResult)
                 if mainResult == 0 {
                     self.connectionStatus = "接続成功"
