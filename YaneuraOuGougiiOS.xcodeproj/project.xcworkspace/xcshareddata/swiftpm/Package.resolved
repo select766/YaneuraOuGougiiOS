@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "yaneuraougougiiosspm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/select766/YaneuraOuGougiiOSSPM",
+      "state" : {
+        "revision" : "40529714bf4c5bd604ceb288e1e7736d5f4458c2",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AAEE8CEA29001A420054DA5E /* FukauraOuiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8CE929001A420054DA5E /* FukauraOuiOSApp.swift */; };
+		AAEE8CEA29001A420054DA5E /* YaneuraOuGougiiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8CE929001A420054DA5E /* YaneuraOuGougiiOSApp.swift */; };
 		AAEE8CEC29001A420054DA5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8CEB29001A420054DA5E /* ContentView.swift */; };
 		AAEE8CEE29001A470054DA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8CED29001A470054DA5E /* Assets.xcassets */; };
 		AAEE8CF129001A470054DA5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8CF029001A470054DA5E /* Preview Assets.xcassets */; };
 		AAEE8CFD29001C570054DA5E /* DlShogiResnet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8CFC29001C570054DA5E /* DlShogiResnet.mlmodel */; };
 		AAEE8D0029001C860054DA5E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEE8CFF29001C860054DA5E /* libc++.tbd */; };
-		AAEE8D0329002B700054DA5E /* YaneuraOuiOSSPM in Frameworks */ = {isa = PBXBuildFile; productRef = AAEE8D0229002B700054DA5E /* YaneuraOuiOSSPM */; };
+		AAEE8D0329002B700054DA5E /* YaneuraOuGougiiOSSPM in Frameworks */ = {isa = PBXBuildFile; productRef = AAEE8D0229002B700054DA5E /* YaneuraOuGougiiOSSPM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AAEE8CE629001A420054DA5E /* FukauraOuiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FukauraOuiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAEE8CE929001A420054DA5E /* FukauraOuiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FukauraOuiOSApp.swift; sourceTree = "<group>"; };
+		AAEE8CE629001A420054DA5E /* YaneuraOuGougiiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaneuraOuGougiiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEE8CE929001A420054DA5E /* YaneuraOuGougiiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaneuraOuGougiiOSApp.swift; sourceTree = "<group>"; };
 		AAEE8CEB29001A420054DA5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAEE8CED29001A470054DA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAEE8CF029001A470054DA5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -33,7 +33,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAEE8D0029001C860054DA5E /* libc++.tbd in Frameworks */,
-				AAEE8D0329002B700054DA5E /* YaneuraOuiOSSPM in Frameworks */,
+				AAEE8D0329002B700054DA5E /* YaneuraOuGougiiOSSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				AAEE8D0C29014F410054DA5E /* README.md */,
-				AAEE8CE829001A420054DA5E /* FukauraOuiOS */,
+				AAEE8CE829001A420054DA5E /* YaneuraOuGougiiOS */,
 				AAEE8CE729001A420054DA5E /* Products */,
 				AAEE8CFE29001C850054DA5E /* Frameworks */,
 			);
@@ -53,21 +53,21 @@
 		AAEE8CE729001A420054DA5E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAEE8CE629001A420054DA5E /* FukauraOuiOS.app */,
+				AAEE8CE629001A420054DA5E /* YaneuraOuGougiiOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AAEE8CE829001A420054DA5E /* FukauraOuiOS */ = {
+		AAEE8CE829001A420054DA5E /* YaneuraOuGougiiOS */ = {
 			isa = PBXGroup;
 			children = (
-				AAEE8CE929001A420054DA5E /* FukauraOuiOSApp.swift */,
+				AAEE8CE929001A420054DA5E /* YaneuraOuGougiiOSApp.swift */,
 				AAEE8CEB29001A420054DA5E /* ContentView.swift */,
 				AAEE8CFC29001C570054DA5E /* DlShogiResnet.mlmodel */,
 				AAEE8CED29001A470054DA5E /* Assets.xcassets */,
 				AAEE8CEF29001A470054DA5E /* Preview Content */,
 			);
-			path = FukauraOuiOS;
+			path = YaneuraOuGougiiOS;
 			sourceTree = "<group>";
 		};
 		AAEE8CEF29001A470054DA5E /* Preview Content */ = {
@@ -89,9 +89,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AAEE8CE529001A420054DA5E /* FukauraOuiOS */ = {
+		AAEE8CE529001A420054DA5E /* YaneuraOuGougiiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAEE8CF429001A470054DA5E /* Build configuration list for PBXNativeTarget "FukauraOuiOS" */;
+			buildConfigurationList = AAEE8CF429001A470054DA5E /* Build configuration list for PBXNativeTarget "YaneuraOuGougiiOS" */;
 			buildPhases = (
 				AAEE8CE229001A420054DA5E /* Sources */,
 				AAEE8CE329001A420054DA5E /* Frameworks */,
@@ -101,12 +101,12 @@
 			);
 			dependencies = (
 			);
-			name = FukauraOuiOS;
+			name = YaneuraOuGougiiOS;
 			packageProductDependencies = (
-				AAEE8D0229002B700054DA5E /* YaneuraOuiOSSPM */,
+				AAEE8D0229002B700054DA5E /* YaneuraOuGougiiOSSPM */,
 			);
-			productName = FukauraOuiOS;
-			productReference = AAEE8CE629001A420054DA5E /* FukauraOuiOS.app */;
+			productName = YaneuraOuGougiiOS;
+			productReference = AAEE8CE629001A420054DA5E /* YaneuraOuGougiiOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AAEE8CE129001A410054DA5E /* Build configuration list for PBXProject "FukauraOuiOS" */;
+			buildConfigurationList = AAEE8CE129001A410054DA5E /* Build configuration list for PBXProject "YaneuraOuGougiiOS" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,13 +134,13 @@
 			);
 			mainGroup = AAEE8CDD29001A410054DA5E;
 			packageReferences = (
-				AAEE8D0129002B700054DA5E /* XCRemoteSwiftPackageReference "FukauraOuiOSSPM" */,
+				AAEE8D0129002B700054DA5E /* XCRemoteSwiftPackageReference "YaneuraOuGougiiOSSPM" */,
 			);
 			productRefGroup = AAEE8CE729001A420054DA5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AAEE8CE529001A420054DA5E /* FukauraOuiOS */,
+				AAEE8CE529001A420054DA5E /* YaneuraOuGougiiOS */,
 			);
 		};
 /* End PBXProject section */
@@ -164,7 +164,7 @@
 			files = (
 				AAEE8CEC29001A420054DA5E /* ContentView.swift in Sources */,
 				AAEE8CFD29001C570054DA5E /* DlShogiResnet.mlmodel in Sources */,
-				AAEE8CEA29001A420054DA5E /* FukauraOuiOSApp.swift in Sources */,
+				AAEE8CEA29001A420054DA5E /* YaneuraOuGougiiOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +292,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FukauraOuiOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"YaneuraOuGougiiOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 26639CRUMF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,7 +307,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.outlook.select766.FukauraOuiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.outlook.select766.YaneuraOuGougiiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,7 +322,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FukauraOuiOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"YaneuraOuGougiiOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 26639CRUMF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -337,7 +337,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.outlook.select766.FukauraOuiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.outlook.select766.YaneuraOuGougiiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -348,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AAEE8CE129001A410054DA5E /* Build configuration list for PBXProject "FukauraOuiOS" */ = {
+		AAEE8CE129001A410054DA5E /* Build configuration list for PBXProject "YaneuraOuGougiiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AAEE8CF229001A470054DA5E /* Debug */,
@@ -357,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAEE8CF429001A470054DA5E /* Build configuration list for PBXNativeTarget "FukauraOuiOS" */ = {
+		AAEE8CF429001A470054DA5E /* Build configuration list for PBXNativeTarget "YaneuraOuGougiiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AAEE8CF529001A470054DA5E /* Debug */,
@@ -369,21 +369,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AAEE8D0129002B700054DA5E /* XCRemoteSwiftPackageReference "FukauraOuiOSSPM" */ = {
+		AAEE8D0129002B700054DA5E /* XCRemoteSwiftPackageReference "YaneuraOuGougiiOSSPM" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/select766/FukauraOuiOSSPM";
+			repositoryURL = "https://github.com/select766/YaneuraOuGougiiOSSPM";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 10.0.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AAEE8D0229002B700054DA5E /* YaneuraOuiOSSPM */ = {
+		AAEE8D0229002B700054DA5E /* YaneuraOuGougiiOSSPM */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AAEE8D0129002B700054DA5E /* XCRemoteSwiftPackageReference "FukauraOuiOSSPM" */;
-			productName = YaneuraOuiOSSPM;
+			package = AAEE8D0129002B700054DA5E /* XCRemoteSwiftPackageReference "YaneuraOuGougiiOSSPM" */;
+			productName = YaneuraOuGougiiOSSPM;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
