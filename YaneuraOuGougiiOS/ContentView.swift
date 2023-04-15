@@ -24,7 +24,8 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Text("FukauraOu iOS")
+            Text("YaneuraOu iOS (DEEP+NNUE)")
+            Text("DEEP: port 8090, NNUE: port 8091")
             Text("将棋所の設定でDNN_Model1を空にする必要あり")
             Text(connectionStatus)
             HStack {
@@ -42,13 +43,21 @@ struct ContentView: View {
                 print(DlShogiResnet.urlOfModelInThisBundle.absoluteString)
                 let model_url_p = stringToUnsafeMutableBufferPointer(DlShogiResnet.urlOfModelInThisBundle.absoluteString)
                 let compute_units: Int32 = 2 // 0:cpu, 1: cpuandgpu, 2: all (neural engine)
-                let mainResult = YaneuraOuGougiiOSSPM.yaneuraou_ios_main(host_p.baseAddress!, 8090, model_url_p.baseAddress!, compute_units)
+                let mainResult = YaneuraOuGougiiOSSPM.yaneuraou_ios_main(host_p.baseAddress!, 8090, model_url_p.baseAddress!, compute_units, host_p.baseAddress!, 8091)
                 print("yaneuraou_ios_main", mainResult)
-                if mainResult == 0 {
-                    self.connectionStatus = "接続成功"
+                var st = ""
+                if mainResult & (1 << 0) != 0 {
+                    st += "DEEP: OK"
                 } else {
-                    self.connectionStatus = "接続失敗"
+                    st += "DEEP: failed"
                 }
+                st += ", "
+                if mainResult & (1 << 1) != 0 {
+                    st += "NNUE: OK"
+                } else {
+                    st += "NNUE: failed"
+                }
+                self.connectionStatus = st
             }) {
                 Text("Run")
             }
