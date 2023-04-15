@@ -39,11 +39,15 @@ struct ContentView: View {
                 }
                 self.running = true
                 UserDefaults.standard.set(usiHost, forKey: userDefaultsUSIServerIpAddressKey)
+                guard let nnue_eval_path = Bundle.main.path(forResource: "nn", ofType: "bin") else {
+                    fatalError()
+                }
+                let nnue_eval_path_p = stringToUnsafeMutableBufferPointer(nnue_eval_path)
                 let host_p = stringToUnsafeMutableBufferPointer(usiHost)
                 print(DlShogiResnet.urlOfModelInThisBundle.absoluteString)
                 let model_url_p = stringToUnsafeMutableBufferPointer(DlShogiResnet.urlOfModelInThisBundle.absoluteString)
                 let compute_units: Int32 = 2 // 0:cpu, 1: cpuandgpu, 2: all (neural engine)
-                let mainResult = YaneuraOuGougiiOSSPM.yaneuraou_ios_main(host_p.baseAddress!, 8090, model_url_p.baseAddress!, compute_units, host_p.baseAddress!, 8091)
+                let mainResult = YaneuraOuGougiiOSSPM.yaneuraou_ios_main(host_p.baseAddress!, 8090, model_url_p.baseAddress!, compute_units, host_p.baseAddress!, 8091, nnue_eval_path_p.baseAddress!)
                 print("yaneuraou_ios_main", mainResult)
                 var st = ""
                 if mainResult & (1 << 0) != 0 {

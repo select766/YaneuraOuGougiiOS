@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAEE4A9F29EA7F4C00CBA37A /* nn.bin in Resources */ = {isa = PBXBuildFile; fileRef = AAEE4A9E29EA7F4C00CBA37A /* nn.bin */; };
 		AAEE8CEA29001A420054DA5E /* YaneuraOuGougiiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8CE929001A420054DA5E /* YaneuraOuGougiiOSApp.swift */; };
 		AAEE8CEC29001A420054DA5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8CEB29001A420054DA5E /* ContentView.swift */; };
 		AAEE8CEE29001A470054DA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8CED29001A470054DA5E /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AAEE4A9E29EA7F4C00CBA37A /* nn.bin */ = {isa = PBXFileReference; explicitFileType = compiled; path = nn.bin; sourceTree = "<group>"; };
 		AAEE8CE629001A420054DA5E /* YaneuraOuGougiiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaneuraOuGougiiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEE8CE929001A420054DA5E /* YaneuraOuGougiiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaneuraOuGougiiOSApp.swift; sourceTree = "<group>"; };
 		AAEE8CEB29001A420054DA5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				AAEE8CE929001A420054DA5E /* YaneuraOuGougiiOSApp.swift */,
 				AAEE8CEB29001A420054DA5E /* ContentView.swift */,
+				AAEE4A9E29EA7F4C00CBA37A /* nn.bin */,
 				AAEE8CFC29001C570054DA5E /* DlShogiResnet.mlmodel */,
 				AAEE8CED29001A470054DA5E /* Assets.xcassets */,
 				AAEE8CEF29001A470054DA5E /* Preview Content */,
@@ -150,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAEE4A9F29EA7F4C00CBA37A /* nn.bin in Resources */,
 				AAEE8CF129001A470054DA5E /* Preview Assets.xcassets in Resources */,
 				AAEE8CEE29001A470054DA5E /* Assets.xcassets in Resources */,
 			);

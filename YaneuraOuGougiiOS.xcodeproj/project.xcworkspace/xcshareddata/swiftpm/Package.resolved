@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/select766/YaneuraOuGougiiOSSPM",
       "state" : {
-        "revision" : "e22107bdf069c90cc866a46981aca55732446723",
-        "version" : "1.0.3"
+        "revision" : "def573c0cc1a7cd0ae040aafd1f41fd99367d552",
+        "version" : "1.0.5"
       }
     }
   ],
