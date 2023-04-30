@@ -26,7 +26,6 @@ struct ContentView: View {
         VStack {
             Text("YaneuraOu iOS (DEEP+NNUE)")
             Text("DEEP: port 8090, NNUE: port 8091")
-            Text("将棋所の設定でDNN_Model1を空にする必要あり")
             Text(connectionStatus)
             HStack {
                 Text("USI Host IP:")
