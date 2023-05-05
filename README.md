@@ -2,6 +2,8 @@
 
 [やねうら王](https://github.com/yaneurao/YaneuraOu)と[ふかうら王](https://github.com/yaneurao/YaneuraOu)（やねうら王のDeep Learning系評価関数利用バージョン）を同時にiOS内のアプリ1つで動作するよう移植したサンプルです。
 
+このリポジトリはGUIとエンジンの起動手段のみを含んでおり、思考ロジックは https://github.com/select766/YaneuraOuGougiiOSSPM にあります。
+
 # インストール
 
 Xcodeでプロジェクトを開いてビルドし、端末にインストール。
@@ -46,6 +48,12 @@ nc -l 8091
 # 将棋所で対局
 
 対局時は、将棋所で対局開始してから、iOSアプリ側でMacのIPアドレスを入力して接続。floodgateでの連続対局も可能。`listen_deep.sh`, `listen_nnue.sh`が両方起動していれば、両方のエンジンが同時に動作する。
+
+# 合議機能
+
+2つのエンジンを合議して1つのエンジンとして使うための機構はこちら(iOS上では動作せず、Macが必要)
+
+https://github.com/select766/shogi-gougi
 
 # モデルの変更
 
